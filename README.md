@@ -1,7 +1,7 @@
-# Mexico Training Center
+# MX TC
 
 Examples for the Lectures
 
 ---
 
-Netcracker 2021
+NC @2021
