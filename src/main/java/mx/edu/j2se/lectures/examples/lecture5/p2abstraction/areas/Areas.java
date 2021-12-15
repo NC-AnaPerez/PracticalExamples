@@ -1,4 +1,4 @@
-package mx.edu.j2se.lectures.examples.lecture5;
+package mx.edu.j2se.lectures.examples.lecture5.p2abstraction.areas;
 
 public class Areas {
 	public static void main(String[] args) {
@@ -18,6 +18,8 @@ public class Areas {
 			totalArea += c.getArea();
 		// Plus X number of loops depending on the different figures
 		System.out.println("Not cool approach: " + totalArea);
+		
+		
 		
 		// === Powerful OOP way ===
 		Figure[] figures = {
