@@ -1,6 +1,6 @@
 package mx.edu.j2se.lectures.examples.lecture4.p1exceptions;
 
-public class CustomException extends Error {
+public class CustomException extends RuntimeException {
 
     private final int errorCorde;
     private final String details;

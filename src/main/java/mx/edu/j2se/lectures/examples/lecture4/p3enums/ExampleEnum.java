@@ -6,10 +6,12 @@ public enum ExampleEnum {
     FIRST("Primer ejemplo"),//0
     SECOND("Segundo ejemplo", true),//1
     THIRD("Tercer ejemplo"),//2
-    FOURTH("Ultimo ejemplo"),
-    EXTRA(BigInteger.TEN);//3
+    FOURTH("Ultimo ejemplo"), //3
+    EXTRA(BigInteger.TEN),
+    OTHER;//4
 
     private final String description;
+    ExampleEnum() {this.description = "default";}
     ExampleEnum(String description) {
         this.description = description;
     }
@@ -19,9 +21,14 @@ public enum ExampleEnum {
     ExampleEnum(BigInteger bi) {
         description = bi.toString();
     }
+    
+    public void someMethod() {
+    
+    }
 
     @Override
     public String toString() {
-        return String.format("Name:%s Pos:%d Desc:%s", name(), ordinal(), description);
+        return String.format("Name:%s\t\tPos:%d\tDesc:%s",
+                name(), ordinal(), description);
     }
 }

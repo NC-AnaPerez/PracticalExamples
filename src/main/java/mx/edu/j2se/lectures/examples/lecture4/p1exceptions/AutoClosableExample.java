@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class AutoClosableExample implements AutoCloseable {
 
-    void connect() throws IOException {
+    void connect()  {
         System.out.println("Connecting to external service, DB,or some file");
     }
 

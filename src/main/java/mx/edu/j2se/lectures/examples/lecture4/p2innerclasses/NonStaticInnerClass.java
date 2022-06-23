@@ -7,7 +7,7 @@ public class NonStaticInnerClass {
         public String message;
 
         String getComposedMessage() {
-            return String.format("OuterMessage %s -- Inner Message %s",
+            return String.format("OuterMessage: %s -- Inner Message: %s",
                     NonStaticInnerClass.this.message,
                     message);
         }
